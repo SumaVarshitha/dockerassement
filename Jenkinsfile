@@ -2,7 +2,7 @@ pipeline {
 
     environment { 
 
-        registry = "sumavarshitha/java-maven-node" 
+        registry = "sumavarshitha/assessment" 
 
         registryCredential = 'dockerhub_id' 
 
@@ -14,17 +14,7 @@ pipeline {
 
     stages { 
 
-        stage('Cloning our Git') { 
-
-            steps { 
-
-                git 'https://github.com/SumaVarshitha/dockerassement.git' 
-
-            }
-
-        } 
-
-        stage('Building our image') { 
+        stage('Build image') { 
 
             steps { 
 
@@ -38,7 +28,7 @@ pipeline {
 
         }
 
-        stage('Deploy our image') { 
+        stage('Deploy image') { 
 
             steps { 
 
