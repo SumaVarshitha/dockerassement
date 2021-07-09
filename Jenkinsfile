@@ -2,7 +2,7 @@ pipeline {
 
     environment { 
 
-        registry = "sumavarshitha/assessment" 
+        registry = "sreekar23/sreekar" 
 
         registryCredential = 'dockerhub_id' 
 
